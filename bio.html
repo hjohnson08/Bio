@@ -1,0 +1,534 @@
+<body>
+
+    <head>
+        <title>BIO</title>
+        <style>
+            input[type=text] {
+                border: none;
+                background-color: none;
+                outline: 0;
+                font-size: 25px;
+                font-weight: bold;
+                width: 600px;
+                height: 30px;
+            }
+
+            input[type=text]:focus {
+                border: none;
+                background-color: none;
+                outline: 0;
+                width: 600px;
+                height: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <H3>
+            Bio Program
+        </H3>
+
+        <form action="." method="POST" style="font-size:25px;">
+            <ul>
+                Last Name: <input type=text name=lname />
+                <p></p>
+                Male <input type=radio name=gender value=M style="font-size:25px;" />
+                Female <input type=radio name=gender value=F style="font-size:25px;" />
+                <p></p>
+                <p></p>
+                Company Bio:
+                <p></p>
+                <textarea rows="7" cols="60" name=bio style="font-size:25px;"></textarea>
+                <p></p>
+            </ul>
+
+            <b>Experience</b>
+            <p></p>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $(".c1b1").click(function () {
+                        $("ul1").toggle();
+                    });
+
+                    $(".c1b2").click(function () {
+                        $("ul2").toggle();
+                    });
+
+                    $(".c1b3").click(function () {
+                        $("ul3").toggle();
+                    });
+
+
+
+                    $(".c2b1").click(function () {
+                        $("ul4").toggle();
+                    });
+
+                    $(".c2b2").click(function () {
+                        $("ul5").toggle();
+                    });
+
+                    $(".c2b3").click(function () {
+                        $("ul6").toggle();
+                    });
+
+
+                    $(".c3b1").click(function () {
+                        $("ul7").toggle();
+                    });
+
+                    $(".c3b2").click(function () {
+                        $("ul8").toggle();
+                    });
+
+                    $(".c3b3").click(function () {
+                        $("ul9").toggle();
+                    });
+
+
+                    $(".c4b1").click(function () {
+                        $("ul10").toggle();
+                    });
+
+                    $(".c4b2").click(function () {
+                        $("ul11").toggle();
+                    });
+
+                    $(".c4b3").click(function () {
+                        $("ul12").toggle();
+                    });
+
+
+                    $(".c5b1").click(function () {
+                        $("ul13").toggle();
+                    });
+
+                    $(".c5b2").click(function () {
+                        $("ul14").toggle();
+                    });
+
+                    $(".c5b3").click(function () {
+                        $("ul15").toggle();
+                    });
+
+
+                    $(".c6b1").click(function () {
+                        $("ul16").toggle();
+                    });
+
+                    $(".c6b2").click(function () {
+                        $("ul17").toggle();
+                    });
+
+                    $(".c6b3").click(function () {
+                        $("ul18").toggle();
+                    });
+
+
+                    $(".c7b1").click(function () {
+                        $("ul19").toggle();
+                    });
+
+                    $(".c7b2").click(function () {
+                        $("ul20").toggle();
+                    });
+
+                    $(".c7b3").click(function () {
+                        $("ul21").toggle();
+                    });
+
+
+
+                    $(".acb1").click(function () {
+                        $("p2").toggle();
+                    });
+
+                    $(".acb2").click(function () {
+                        $("p3").toggle();
+                    });
+
+                    $(".acb3").click(function () {
+                        $("p4").toggle();
+                    });
+
+                    $(".acb4").click(function () {
+                        $("p5").toggle();
+                    });
+                    $(".acb5").click(function () {
+                        $("p6").toggle();
+                    });
+                    $(".acb6").click(function () {
+                        $("p7").toggle();
+                    });
+                    $(".acb7").click(function () {
+                        $("p8").toggle();
+                    });
+
+                    $(".cb1").click(function () {
+                        $("p9").toggle();
+                    });
+                });
+            </script>
+            <ul>
+                <p1>
+
+                    Company 1: <input type=text name=company_1 style="font-size:25px;" />
+                    <p></p>
+                    <ul>
+                        Role 1: <input type=text name=r1_c1 style="font-size:25px;" />
+                        <button type=button class="c1b1">ADD/REMOVE ROLE</button>
+
+                        <p></p>
+
+                        <ul1 style="display:none;">
+                            Role 2: <input type=text name=r2_c1 style="font-size:25px;" /><button type=button
+                                class="c1b2">ADD/REMOVE
+                                ROLE</button>
+                        </ul1>
+
+                        <p></p>
+
+                        <ul2 style="display:none;">
+                            Role 3: <input type=text name=r3_c1 style="font-size:25px;" /><button type=button
+                                class="c1b3">ADD/REMOVE
+                                ROLE</button>
+                        </ul2>
+
+                        <p></p>
+
+                        <ul3 style="display:none;">
+                            Role 4: <input type=text name=r4_c1 style="font-size:25px;" />
+                            </u1l3>
+                    </ul>
+
+
+                    <p></p>
+                    <button type=button class="acb1">ADD/REMOVE COMPANY</button>
+                </p1>
+
+                <p></p>
+                <p></p>
+
+                <p2 style="display:none;">
+
+                    Company 2: <input type=text name=company_2 style="font-size:25px;" />
+                    <p></p>
+                    <ul>
+                        Role 1: <input type=text name=r1_c2 style="font-size:25px;" /><button type=button
+                            class="c2b1">ADD/REMOVE ROLE</button>
+
+                        <p></p>
+
+                        <ul4 style="display:none;">
+                            Role 2: <input type=text name=r2_c2 style="font-size:25px;" /><button type=button
+                                class="c2b2">ADD/REMOVE
+                                ROLE</button>
+                        </ul4>
+
+                        <p></p>
+
+                        <ul5 style="display:none;">
+                            Role 3: <input type=text name=r3_c2 style="font-size:25px;" /><button type=button
+                                class="c2b3">ADD/REMOVE
+                                ROLE</button>
+                        </ul5>
+                        <p></p>
+                        <ul6 style="display:none;">
+                            Role 4: <input type=text name=r4_c2 style="font-size:25px;" />
+                        </ul6>
+                    </ul>
+
+
+                    <p></p>
+                    <button type=button class="acb2">ADD/REMOVE COMPANY</button>
+                </p2>
+                <p></p>
+                <p></p>
+
+                <p3 style="display:none;">
+                    Company 3: <input type=text name=company_3 style="font-size:25px;" />
+                    <p></p>
+                    <ul>
+                        Role 1: <input type=text name=r1_c3 style="font-size:25px;" /><button type=button
+                            class="c3b1">ADD/REMOVE ROLE</button>
+
+                        <p></p>
+
+                        <ul7 style="display:none;">
+                            Role 2: <input type=text name=r2_c3 style="font-size:25px;" /><button type=button
+                                class="c3b2">ADD/REMOVE
+                                ROLE</button>
+                        </ul7>
+
+                        <p></p>
+
+                        <ul8 style="display:none;">
+                            Role 3: <input type=text name=r3_c3 style="font-size:25px;" /><button type=button
+                                class="c3b3">ADD/REMOVE
+                                ROLE</button>
+                        </ul8>
+
+                        <p></p>
+
+                        <ul9 style="display:none;">
+                            Role 4: <input type=text name=r4_c3 style="font-size:25px;" />
+                        </ul9>
+                    </ul>
+                    <p></p>
+                    <button type=button class="acb3">ADD/REMOVE COMPANY</button>
+                </p3>
+
+                <p></p>
+                <p></p>
+
+                <p4 style="display:none;">
+
+                    Company 4: <input type=text name=company_4 style="font-size:25px;" />
+                    <p></p>
+                    <ul>
+                        Role 1: <input type=text name=r1_c4 style="font-size:25px;" /><button type=button
+                            class="c4b1">ADD/REMOVE ROLE</button>
+
+                        <p></p>
+
+                        <ul10 style="display:none;">
+                            Role 2: <input type=text name=r2_c4 style="font-size:25px;" /><button type=button
+                                class="c4b2">ADD/REMOVE
+                                ROLE</button>
+                            </ul0>
+
+                            <p></p>
+
+                            <ul11 style="display:none;">
+                                Role 3: <input type=text name=r3_c4 style="font-size:25px;" /><button type=button
+                                    class="c4b3">ADD/REMOVE
+                                    ROLE</button>
+                            </ul11>
+
+                            <p></p>
+
+                            <ul12 style="display:none;">
+                                Role 4: <input type=text name=r4_c4 style="font-size:25px;" />
+                            </ul12>
+                    </ul>
+
+
+                    <p></p>
+                    <button type=button class="acb4">ADD/REMOVE COMPANY</button>
+                </p4>
+
+                <p></p>
+                <p></p>
+
+
+                <p5 style="display:none;">
+
+                    Company 5: <input type=text name=company_5 />
+                    <p></p>
+                    <ul>
+                        Role 1: <input type=text name=r1_c5 style="font-size:25px;" /><button type=button
+                            class="c5b1">ADD/REMOVE ROLE</button>
+
+                        <p></p>
+
+                        <ul13 style="display:none;">
+                            Role 2: <input type=text name=r2_c5 style="font-size:25px;" /><button type=button
+                                class="c5b2">ADD/REMOVE
+                                ROLE</button>
+                            </ul3>
+
+                            <p></p>
+
+                            <ul14 style="display:none;">
+                                Role 3: <input type=text name=r3_c5 style="font-size:25px;" /><button type=button
+                                    class="c5b3">ADD/REMOVE
+                                    ROLE</button>
+                            </ul14>
+
+                            <p></p>
+
+                            <ul15 style="display:none;">
+                                Role 4: <input type=text name=r4_c5 style="font-size:25px;" />
+                            </ul15>
+                    </ul>
+                    <p></p>
+
+                    <button type=button class="acb5">ADD/REMOVE COMPANY</button>
+                </p5>
+
+                <p></p>
+                <p></p>
+
+
+                <p6 style="display:none;">
+
+                    Company 6: <input type=text name=company_6 style="font-size:25px;" />
+                    <p></p>
+                    <ul>
+                        Role 1: <input type=text name=r1_c6 style="font-size:25px;" /><button type=button
+                            class="c6b1">ADD/REMOVE ROLE</button>
+
+                        <p></p>
+
+                        <ul16 style="display:none;">
+                            Role 2: <input type=text name=r2_c6 style="font-size:25px;" /><button type=button
+                                class="c6b2">ADD/REMOVE
+                                ROLE</button>
+                            </ul6>
+
+                            <p></p>
+
+                            <ul17 style="display:none;">
+                                Role 3: <input type=text name=r3_c6 style="font-size:25px;" /><button type=button
+                                    class="c6b3">ADD/REMOVE
+                                    ROLE</button>
+                            </ul17>
+
+                            <p></p>
+
+                            <ul18 style="display:none;">
+                                Role 4: <input type=text name=r4_c6 style="font-size:25px;" />
+                            </ul18>
+                    </ul>
+                    <p></p>
+
+                    <button type=button class="acb6">ADD/REMOVE COMPANY</button>
+                </p6>
+
+                <p></p>
+                <p></p>
+
+                <p></p>
+                <p></p>
+
+
+                <p7 style="display:none;">
+
+                    Company 7: <input type=text name=company_7 style="font-size:25px;" />
+                    <p></p>
+                    <ul>
+                        Role 1: <input type=text name=r1_c7 style="font-size:25px;" /><button type=button
+                            class="c7b1">ADD/REMOVE ROLE</button>
+
+                        <p></p>
+
+                        <ul19 style="display:none;">
+                            Role 2: <input type=text name=r2_c7 style="font-size:25px;" /><button type=button
+                                class="c7b2">ADD/REMOVE
+                                ROLE</button>
+                            </ul9>
+
+                            <p></p>
+
+                            <ul20 style="display:none;">
+                                Role 3: <input type=text name=r3_c7 style="font-size:25px;" /><button type=button
+                                    class="c7b3">ADD/REMOVE
+                                    ROLE</button>
+                            </ul20>
+
+                            <p></p>
+
+                            <ul21 style="display:none;">
+                                Role 4: <input type=text name=r4_c7 style="font-size:25px;" />
+                            </ul21>
+                    </ul>
+
+
+
+                </p7>
+
+            </ul>
+            <p></p>
+            <p></p>
+            <b>Education</b>
+            <ul>
+                <p8>
+
+                    <p></p>
+
+                    <p></p>
+                    <ul>
+                        College #1: <input type=text name=college_1 style="font-size:25px;">
+                        <p></p>
+                        Degree:
+                        <ul>
+
+                            MD <input type=radio name=degree_1 value=M.D.>
+                            M.S. <input type=radio name=degree_1 value=M.S.>
+                            M.A. <input type=radio name=degree_1 value=M.A.>
+                            MBA <input type=radio name=degree_1 value=MBA>
+                            MPH <input type=radio name=degree_1 value=MPH>
+                            MPA <input type=radio name=degree_1 value=MPA>
+                            JD <input type=radio name=degree_1 value=JD>
+                            <p></p>
+                            <p></p>
+                            B.A. <input type=radio name=degree_1 value=B.A.>
+                            B.S. <input type=radio name=degree_1 value=B.S.>
+                            BSBA <input type=radio name=degree_1 value=BSBA>
+                            BSA <input type=radio name=degree_1 value=BSA>
+                            <p></p>
+                            BBA <input type=radio name=degree_1 value=BBA>
+                            A.S. <input type=radio name=degree_1 value=A.S.>
+                            A.A. <input type=radio name=degree_1 value=A.A.>
+                            None <input type=radio name=degree_1 value=none checked>
+                            <p></p>
+
+                            Major: <input type=text name=major_1>
+
+                            <p></p>
+
+                        </ul>
+                    </ul>
+
+                    <button type=button class="cb1">ADD/REMOVE COLLEGE</button>
+                </p8>
+                <p></p>
+                <p></p>
+                <p9 style="display:none;">
+
+                    <ul>
+                        College #2: <input type=text name=college_2>
+
+                        <p></p>
+                        Degree:
+
+                        <ul>
+                            MD <input type=radio name=degree_2 value=M.D.>
+                            M.S. <input type=radio name=degree_2 value=M.S.>
+                            M.A. <input type=radio name=degree_2 value=M.A.>
+                            MBA <input type=radio name=degree_2 value=MBA>
+                            MPH <input type=radio name=degree_2 value=MPH>
+                            MPA <input type=radio name=degree_2 value=MPA>
+                            JD <input type=radio name=degree_2 value=JD>
+                            <p></p>
+                            <p></p>
+                            B.A. <input type=radio name=degree_2 value=B.A.>
+                            B.S. <input type=radio name=degree_2 value=B.S.>
+                            BSBA <input type=radio name=degree_2 value=BSBA>
+                            BSA <input type=radio name=degree_2 value=BSA>
+                            <p></p>
+                            BBA <input type=radio name=degree_2 value=BBA>
+                            A.S. <input type=radio name=degree_2 value=A.S.>
+                            A.A. <input type=radio name=degree_2 value=A.A.>
+                            None <input type=radio name=degree_2 value=none checked>
+                            <p></p>
+
+                            Major: <input type=text name=major_2>
+                        </ul>
+
+                    </ul>
+
+                </p9>
+            </ul>
+            <p>
+            </p>
+            <p></p>
+            <p10>
+                <input type=submit />
+            </p10>
+        </form>
+
+
+    </body>

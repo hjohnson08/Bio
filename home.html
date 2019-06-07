@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <b>
+        Bio
+    </b>
+</head>
+<p></p>
+
+<body style="font-size:25px;">
+    <!-- The text field -->
+    <textarea rows="12" cols="70" id="myInput" style="font-size:25px;">
+        {{fullbio}}
+    </textarea>
+
+    <!-- The button used to copy the text -->
+    <button onclick="myFunction()">Copy Bio</button>
+
+    <script>
+        function myFunction() {
+            /* Get the text field */
+            var copyText = document.getElementById("myInput");
+
+            /* Select the text field */
+            copyText.select();
+
+            /* Copy the text inside the text field */
+            document.execCommand("copy");
+
+
+        }
+
+
+    </script>
+</body>
+
+
+</html>
