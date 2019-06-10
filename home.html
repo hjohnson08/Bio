@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<head>
+<head style="font-size:23px;">
+    Bio for
     <b>
-        Bio
+        {{name}}
     </b>
+
 </head>
 <p></p>
 
-<body style="font-size:25px;">
+<body>
     <!-- The text field -->
-    <textarea rows="12" cols="70" id="myInput" style="font-size:25px;">
+    <textarea rows="14" cols="80" id="myInput" style="font-size:23px;">
         {{fullbio}}
     </textarea>
 
     <!-- The button used to copy the text -->
-    <button onclick="myFunction()">Copy Bio</button>
+    <button onclick="myFunction()" style="font-size:40px;">Copy Bio</button>
 
     <script>
         function myFunction() {

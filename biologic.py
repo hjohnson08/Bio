@@ -69,6 +69,24 @@ def getvalue():
     r3_c7 = request.form["r3_c7"]
     r4_c7 = request.form["r4_c7"]
 
+    company_8 = request.form["company_8"]
+    r1_c8 = request.form["r1_c8"]
+    r2_c8 = request.form["r2_c8"]
+    r3_c8 = request.form["r3_c8"]
+    r4_c8 = request.form["r4_c8"]
+
+    company_9 = request.form["company_9"]
+    r1_c9 = request.form["r1_c9"]
+    r2_c9 = request.form["r2_c9"]
+    r3_c9 = request.form["r3_c9"]
+    r4_c9 = request.form["r4_c9"]
+
+    company_10 = request.form["company_10"]
+    r1_c10 = request.form["r1_c10"]
+    r2_c10 = request.form["r2_c10"]
+    r3_c10 = request.form["r3_c10"]
+    r4_c10 = request.form["r4_c10"]
+
     if gender == "M" and degree_1 == "M.D.":
         pronoun = "Dr."
         noun = "he"
@@ -166,7 +184,7 @@ def getvalue():
         if degree_2 == "none": 
             education2 = ""
         else:
-            education2 = " and " + article + " " + degree + major + " from " + college
+            education2 = " and " + article + " " + degree + major.lower() + " from " + college
         return education2
 
     #addmajor
@@ -174,7 +192,7 @@ def getvalue():
         if not major:
             return ""
         else:
-            return " in " + major
+            return " in " + major.lower()
     
 
      
@@ -186,6 +204,9 @@ def getvalue():
     c5number_roles = roles(r1_c5, r2_c5, r3_c5, r4_c5)
     c6number_roles = roles(r1_c6, r2_c6, r3_c6, r4_c6)
     c7number_roles = roles(r1_c7, r2_c7, r3_c7, r4_c7)
+    c8number_roles = roles(r1_c8, r2_c8, r3_c8, r4_c8)
+    c9number_roles = roles(r1_c9, r2_c9, r3_c9, r4_c9)
+    c10number_roles = roles(r1_c10, r2_c10, r3_c10, r4_c10)
 
     phrase1 = getphrase1(c1number_roles, company_1, v1, r1_c1, r2_c1, r3_c1, r4_c1)
     phrase2 = getphrase1(c2number_roles, company_2, v2, r1_c2, r2_c2, r3_c2, r4_c2)
@@ -194,6 +215,9 @@ def getvalue():
     phrase5 = getphrase1(c5number_roles, company_5, v2, r1_c5, r2_c5, r3_c5, r4_c5)
     phrase6 = getphrase1(c6number_roles, company_6, v3, r1_c6, r2_c6, r3_c6, r4_c6)
     phrase7 = getphrase1(c7number_roles, company_7, v1, r1_c7, r2_c7, r3_c7, r4_c7)
+    phrase8 = getphrase1(c8number_roles, company_8, v2, r1_c8, r2_c8, r3_c8, r4_c8)
+    phrase9 = getphrase1(c9number_roles, company_9, v3, r1_c9, r2_c9, r3_c9, r4_c9)
+    phrase10 = getphrase1(c10number_roles, company_10, v1, r1_c10, r2_c10, r3_c10, r4_c10)
 
     experience1 = experiencemaker1(company_1, phrase1, name, s1)
     experience2 = experiencemaker2(company_2, company_1, phrase2, noun, s2)
@@ -202,16 +226,17 @@ def getvalue():
     experience5 = experiencemaker2(company_5, company_4, phrase5, name, s1)
     experience6 = experiencemaker2(company_6, company_5, phrase6, noun, s2)
     experience7 = experiencemaker2(company_7, company_6, phrase7, name, s3)
+    experience8 = experiencemaker2(company_8, company_7, phrase8, noun, s1)
+    experience9 = experiencemaker2(company_9, company_8, phrase9, name, s2)
+    experience10 = experiencemaker2(company_10, company_9, phrase10, noun, s3)
 
-    
-    
     education1 = article_function(degree_1) + " " + degree_1 + major(major_1) + " from " + college_1
     education = " " + name + " holds " + education1 + nodegree_2(article_function(degree_2), degree_2, college_2, major(major_2)) + "."
 
 
-    fullbio = bio + experience1 + experience2 + experience3 + experience4 + experience5 + experience6 + experience7 + education 
+    fullbio = bio + experience1 + experience2 + experience3 + experience4 + experience5 + experience6 + experience7 + experience8 + experience9 + experience10 + education 
 
-    return render_template("home.html", fullbio = fullbio)
+    return render_template("home.html", fullbio = fullbio, name = name)
 
 if __name__ == "__main__":
     app.run(debug=True)
